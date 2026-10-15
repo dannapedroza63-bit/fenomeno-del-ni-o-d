@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia y El Niño | Todo el País</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', cursive, sans-serif; }
+        :root {
+            --azul-cielo: #4fc3f7;
+            --azul-profundo: #0277bd;
+            --amarillo-col: #ffd600;
+            --azul-col: #003893;
+            --rojo-col: #ce1126;
+            --verde-bosque: #4caf50;
+            --blanco: #ffffff;
+            --texto-fuerte: #263238;
+        }
+        body {
+            background: linear-gradient(180deg, #fffde7 0%, #e3f2fd 50%, #e8f5e9 100%);
+            background-size: 100% 300%;
+            animation: bandera-colores 12s ease-in-out infinite;
+            min-height: 100vh;
+            color: var(--texto-fuerte);
+        }
+        @keyframes bandera-colores {
+            0% { background-position: 0 0; }
+            50% { background-position: 0 100%; }
+            100% { background-position: 0 0; }
+        }
+        nav {
+            background: linear-gradient(90deg, var(--amarillo-col), var(--azul-col), var(--rojo-col));
+            padding: 1.3rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.6rem 1rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        nav a:hover, nav a.activa {
+            background: rgba(255,255,255,0.35);
+            transform: scale(1.1);
+        }
+        main {
+            padding: 3rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.6rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--azul-col);
+            text-shadow: 2px 2px 4px rgba(0,56,147,0.2);
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--rojo-col);
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+        .imagen-principal {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .seccion {
+            background: rgba(255,255,255,0.92);
+            padding: 2.4rem;
+            border-radius: 20px;
+            margin: 2.5rem 0;
+            border-left: 6px solid var(--amarillo-col);
+            box-shadow: 0 6px 20px rgba(255,214,0,0.15);
+        }
+        .seccion h2 {
+            color: var(--azul-col);
+            margin-bottom: 1.3rem;
+            font-size: 1.6rem;
+            border-bottom: 2px dashed var(--azul-cielo);
+            padding-bottom: 0.6rem;
+        }
+        .seccion p {
+            line-height: 1.9;
+            margin-bottom: 1.3rem;
+            font-size: 1.05rem;
+        }
+        .regiones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+        .region {
+            background: white;
+            padding: 1.8rem;
+            border-radius: 14px;
+            border-top: 4px solid var(--rojo-col);
+            box-shadow: 0 4px 15px rgba(206,17,38,0.1);
+            transition: transform 0.3s ease;
+        }
+        .region:hover {
+            transform: translateY(-6px);
+        }
+        .region h3 {
+            color: var(--rojo-col);
+            margin-bottom: 0.8rem;
+        }
+        .destacado {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+            border-right: 5px solid var(--verde-bosque);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(90deg, var(--amarillo-col), var(--azul-col), var(--rojo-col));
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .imagen-principal { height: 200px; }
+            .seccion { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="portada-proyecto.html">🏔️ Inicio</a></li>
+        <li><a href="fenomeno-supernino.html">🌊 El Fenómeno</a></li>
+        <li><a href="colombia-todo-pais.html" class="activa">🇨🇴 Colombia</a></li>
+        <li><a href="bogota-clima-vida.html">🏙️ Bogotá</a></li>
+        <li><a href="cuidemos-nuestra-tierra.html">🌿 Educación</a></li>
+        <li><a href="lenguaje-y-naturaleza.html">📝 Español</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>🇨🇴 Colombia: Un País, Muchos Climas</h1>
+    <p class="subtitulo">Cómo afecta El Niño en cada rincón de nuestra tierra</p>
+
+    <img src="mapa-colombia-naturaleza.jpg" alt="Mapa de Colombia y su naturaleza" class="imagen-principal">
+
+    <div class="seccion">
+        <h2>🌎 Un país único en el mundo</h2>
+        <p>Colombia es uno de los países con mayor diversidad de climas en todo el planeta. Aunque estamos en la zona donde el sol brilla con fuerza todo el año, la geografía cambia todo: tenemos montañas altísimas donde hace frío perpetuo, costas calurosas donde llueve muchísimo, selvas inmensas y llanuras que se extienden hasta donde alcanza la vista.</p>
+        <p>Esa riqueza hace que nuestro país sea hermoso, pero también lo hace frágil. Cuando El Niño llega, no afecta a todos por igual. Cada región lo siente a su manera, con sus propios retos y sus propias fortalezas. Conocer lo que pasa en cada zona nos ayuda a entender que cuidar el agua en una región ayuda a quienes viven en otra.</p>
+        <p>Colombia no es solo una región: somos la unión de muchas gentes, tierras y climas. Lo que une a todo el país es la necesidad de prepararnos, cuidar nuestros recursos y ayudarnos entre todos cuando llega la dificultad.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>🗺️ El Niño región por región</h2>
+        <p>El fenómeno cambia según el lugar. Así se siente en cada zona de Colombia:</p>
+
+        <div class="regiones">
+            <div class="region">
+                <h3>🌊 Costa Caribe</h3>
+                <p>Es una de las zonas que más sufre. Las lluvias disminuyen mucho, los ríos bajan y los suelos se secan. La ganadería y la agricultura se ven afectadas porque la tierra necesita agua. Sin embargo, el calor nos recuerda lo valioso que es cuidar cada gota y proteger los bosques de galería que acompañan los ríos.</p>
+            </div>
+            <div class="region">
+                <h3>⛰️ Región Andina</h3>
+                <p>Aquí están las ciudades más grandes del país. Las lluvias se vuelven menos frecuentes, los páramos que guardan el agua sufren y los embalses reducen su nivel. Las temperaturas suben, incluso en zonas que suelen ser frescas. Es vital proteger los bosques y ahorrar agua, porque de aquí viene el suministro para millones de personas.</p>
+            </div>
+            <div class="region">
+                <h3>🌳 Amazonía y Pacífico</h3>
+                <p>Son las zonas más lluviosas del mundo, pero también sienten el cambio. Los periodos secos se vuelven más largos y aumenta el riesgo de incendios en la selva. Cuando los bosques se queman, se pierde biodiversidad y se libera calor que afecta a todo el planeta. Proteger estas selvas es cuidar el aire que respiramos todos.</p>
+            </div>
+            <div class="region">
+                <h3>🌾 Llanos Orientales</h3>
+                <p>Las sabanas se secan más rápido, los pastos escasean para los animales y los ríos que atraviesan la región reducen su caudal. Sin embargo, la gente de los llanos ha aprendido a guardar agua en épocas de lluvia para usarla en la sequía: esa sabiduría es ejemplo para todo el país.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="destacado">
+        <h2>💧 El agua que nos conecta</h2>
+        <p>Aunque vivamos en regiones distintas, el agua nos une. Los ríos que nacen en los Andes bajan a las costas y a los llanos. Las lluvias que caen en la selva alimentan fuentes que abastecen ciudades lejanas. Lo que pasa en un páramo de Cundinamarca se siente en un río de la costa. No hay "el agua de unos" y "el agua de otros": hay una sola agua que recorre todo el país.</p>
+        <p>Por eso, cuando escasea en un lugar, nos afecta a todos. Cuidarla donde estés es ayudar a quien está lejos. El ahorro de agua en Bogotá, la protección de un bosque en la Amazonía o la siembra de árboles en los llanos son acciones que benefician a todo Colombia.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>🔥 Riesgos que debemos conocer</h2>
+        <p>Cuando El Niño está activo, aparecen peligros que todos debemos vigilar:</p>
+        <ul>
+            <li><strong>Incendios forestales:</strong> la vegetación seca se quema con facilidad. Una colilla mal apagada o una fogata sin control puede destruir hectáreas de bosque en pocas horas.</li>
+            <li><strong>Escasez de agua:</strong> los embalses se llenan menos y el consumo sube por el calor. Si todos ahorramos, el agua alcanza para más personas.</li>
+            <li><strong>Pérdida de cosechas:</strong> los agricultores sufren cuando la tierra no recibe lluvia. Apoyar los mercados locales y no desperdiciar alimentos es una forma de solidaridad.</li>
+            <li><strong>Salud:</strong> el calor extremo y la concentración de polvo en el aire pueden afectar las vías respiratorias. Mantenerse hidratado y limpiar los espacios ayuda a proteger a la familia.</li>
+        </ul>
+    </div>
+
+    <div class="seccion">
+        <h2>🤝 Prepararnos es la clave</h2>
+        <p>No podemos impedir que El Niño ocurra, pero sí podemos enfrentarlo mejor. La preparación empieza por saber qué hacer y compartirlo con quienes nos rodean:</p>
+        <ul>
+            <li>Conocer dónde están los puntos de agua cercanos y cómo cuidarlos</li>
+            <li>Tener un plan sencillo en casa: qué hacer si falta el agua o sube la temperatura</li>
+            <li>Enseñar a los más pequeños por qué no se juega con el fuego en épocas secas</li>
+            <li>Compartir recursos: si tienes agua suficiente, puedes ayudar a quien tiene menos</li>
+            <li>Seguir las indicaciones de las autoridades como el IDEAM, que vigila el clima todo el tiempo</li>
+        </ul>
+        <p style="margin-top: 1.5rem; font-weight: bold; color: var(--rojo-col); text-align: center;">"Colombia no se cuida solo con leyes. Se cuida con la acción de cada uno de sus hijos."</p>
+    </div>
+</main>
+
+<footer>
+    <p>Proyecto Educativo · 🇨🇴 Colombia · Tierra de Todos · 2026</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogotá y su Clima | Historia y Vida</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', cursive, sans-serif; }
+        :root {
+            --azul-cielo: #81d4fa;
+            --gris-ciudad: #607d8b;
+            --verde-montana: #2e7d32;
+            --azul-sabana: #4fc3f7;
+            --naranja-atardecer: #ff9800;
+            --blanco: #ffffff;
+            --texto-fuerte: #263238;
+        }
+        body {
+            background: linear-gradient(180deg, #e3f2fd 0%, #f5f5f5 50%, #e8f5e9 100%);
+            background-size: 100% 300%;
+            animation: sabana-luz 14s ease-in-out infinite;
+            min-height: 100vh;
+            color: var(--texto-fuerte);
+        }
+        @keyframes sabana-luz {
+            0% { background-position: 0 0; }
+            50% { background-position: 0 100%; }
+            100% { background-position: 0 0; }
+        }
+        nav {
+            background: linear-gradient(90deg, var(--gris-ciudad), var(--azul-sabana), var(--verde-montana));
+            padding: 1.3rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.6rem 1rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover, nav a.activa {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        main {
+            padding: 3rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.6rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--verde-montana);
+            text-shadow: 2px 2px 4px rgba(46,125,50,0.2);
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--gris-ciudad);
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+        .imagen-principal {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .seccion {
+            background: rgba(255,255,255,0.92);
+            padding: 2.4rem;
+            border-radius: 20px;
+            margin: 2.5rem 0;
+            border-left: 6px solid var(--azul-sabana);
+            box-shadow: 0 6px 20px rgba(79,195,247,0.15);
+        }
+        .seccion h2 {
+            color: var(--verde-montana);
+            margin-bottom: 1.3rem;
+            font-size: 1.6rem;
+            border-bottom: 2px dashed var(--azul-cielo);
+            padding-bottom: 0.6rem;
+        }
+        .seccion p {
+            line-height: 1.9;
+            margin-bottom: 1.3rem;
+            font-size: 1.05rem;
+        }
+        .seccion ul {
+            margin: 1.2rem 0 1.2rem 2rem;
+            line-height: 1.9;
+        }
+        .seccion li {
+            margin-bottom: 0.7rem;
+        }
+        .epoca {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            padding: 1.8rem;
+            border-radius: 14px;
+            margin: 1.5rem 0;
+            border-right: 4px solid var(--verde-montana);
+        }
+        .caja-cambios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .cambio {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-top: 3px solid var(--naranja-atardecer);
+            box-shadow: 0 4px 12px rgba(255,152,0,0.1);
+        }
+        .cambio h3 {
+            color: var(--naranja-atardecer);
+            margin-bottom: 0.6rem;
+            font-size: 1.1rem;
+        }
+        .destacado-final {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+            border-left: 5px solid var(--azul-sabana);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(90deg, var(--gris-ciudad), var(--verde-montana));
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .imagen-principal { height: 200px; }
+            .seccion { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="portada-proyecto.html">🏔️ Inicio</a></li>
+        <li><a href="fenomeno-supernino.html">🌊 El Fenómeno</a></li>
+        <li><a href="colombia-todo-pais.html">🇨🇴 Colombia</a></li>
+        <li><a href="bogota-clima-vida.html" class="activa">🏙️ Bogotá</a></li>
+        <li><a href="cuidemos-nuestra-tierra.html">🌿 Educación</a></li>
+        <li><a href="lenguaje-y-naturaleza.html">📝 Español</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>🏙️ Bogotá: Historia, Clima y Vida</h1>
+    <p class="subtitulo">Cómo ha cambiado nuestra ciudad y cómo cuidarla</p>
+
+    <img src="bogota-sabana-ciudad.jpg" alt="Bogotá y la sabana: pasado y presente" class="imagen-principal">
+
+    <div class="seccion">
+        <h2>🌾 Así era la sabana antes</h2>
+        <p>Hace cientos de años, donde hoy vemos calles y edificios, había un inmenso valle verde rodeado de montañas. Los pueblos originarios que vivían aquí cuidaban la tierra, respetaban los ciclos de lluvia y sequía y sabían leer las señales del cielo. La sabana estaba llena de pajonales, lagunas y bosques que guardaban el agua y regulaban el clima.</p>
+        
+        <p>Quienes vivieron en Bogotá hace 70 o 80 años recuerdan un clima distinto: los días eran frescos, las lluvias llegaban con cierta frecuencia y se sabía en qué mes llovería más. Las heladas en el campo eran comunes pero predecibles, y los ríos que cruzaban la ciudad corrían limpios y caudalosos.</p>
+    </div>
+
+    <div class="epoca">
+        <h3>📜 Cómo ha cambiado la ciudad</h3>
+        <p>Bogotá ha crecido mucho. De ser una ciudad pequeña rodeada de campos verdes pasó a ser una gran urbe con millones de personas. Ese crecimiento ha traído cambios importantes en el clima local:</p>
+        <ul>
+            <li>Donde antes había árboles y tierra, ahora hay cemento y asfalto que retienen el calor del sol</li>
+            <li>Las montañas que rodean la ciudad han perdido parte de su vegetación, lo que afecta la entrada de lluvias frescas</li>
+            <li>Los humedales, que funcionaban como esponjas naturales de agua, han disminuido en tamaño y cantidad</li>
+            <li>Los vehículos y las fábricas liberan gases que calientan el aire de la ciudad</li>
+        </ul>
+    </div>
+
+    <div class="seccion">
+        <h2>🌤️ El clima de hoy</h2>
+        <p>Bogotá sigue siendo una ciudad fresca, pero hoy notamos cambios que antes no eran tan evidentes. Las personas mayores lo confirman: "antes llovía más parejo", dicen. Los cambios que vivimos son estos:</p>
+
+        <div class="caja-cambios">
+            <div class="cambio">
+                <h3>🌡️ Más calor</h3>
+                <p>Las temperaturas máximas han subido varios grados en las últimas décadas. Los días calurosos son más frecuentes, especialmente cuando El Niño está activo.</p>
+            </div>
+            <div class="cambio">
+                <h3>🌧️ Lluvias impredecibles</h3>
+                <p>A veces llueve muchísimo en pocas horas y luego pasan semanas sin una gota. Los periodos secos se han vuelto más largos y notables.</p>
+            </div>
+            <div class="cambio">
+                <h3>💧 Menos agua disponible</h3>
+                <p>El agua que llega a Bogotá viene de los páramos, especialmente de Chingaza. Cuando llueve menos allá, los embalses bajan y sentimos la escasez aquí.</p>
+            </div>
+            <div class="cambio">
+                <h3>🌫️ Aire que necesita cuidado</h3>
+                <p>Los días secos y ventosos se acumula polvo en el aire. Caminar, usar la bicicleta y no quemar basura ayuda a que respiremos mejor.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <h2>⛰️ Los páramos: nuestra fuente de vida</h2>
+        <p>Bogotá no tiene ríos grandes que la crucen, pero tiene algo más valioso: los páramos. Son tierras altas, frías y cubiertas de plantas especiales que atrapan el agua de la lluvia y la niebla, la guardan en el suelo y la dejan salir despacio durante todo el año. Sin páramos no habría agua en la ciudad.</p>
+        
+        <img src="paramos-bogota.jpg" alt="Páramo de Chingaza y fuentes de agua" class="imagen-principal">
+        
+        <p>El Niño pone a prueba estos ecosistemas: la lluvia disminuye, la niebla aparece menos y el agua guardada se reduce. Por eso proteger los páramos no es solo cuidar "un lugar lejano": es cuidar el agua que sale de la llave de tu casa. No se debe permitir la tala, la quema ni la agricultura en zonas que son frágiles y que nos sostienen a todos.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>🌳 La ciudad que queremos</h2>
+        <p>El cambio no es inevitable. Podemos cuidar Bogotá con acciones que parecen pequeñas pero que suman mucho:</p>
+        <ul>
+            <li><strong>Sembrar y proteger árboles:</strong> cada árbol da sombra, enfría el aire y ayuda a que la lluvia se filtre en el suelo. En el parque, en el colegio, en el patio de la casa: todo árbol cuenta.</li>
+            <li><strong>Respetar los humedales:</strong> son pulmones y depósitos de agua naturales. No se deben llenar ni contaminar. Cuidarlos es cuidar el clima de la ciudad.</li>
+            <li><strong>Ahorrar agua todos los días:</strong> cerrar la llave, revisar fugas, reutilizar el agua. En Bogotá, cada gota cuenta.</li>
+            <li><strong>Usar menos el carro:</strong> caminar, usar la bicicleta o el transporte público reduce los gases que calientan la ciudad.</li>
+            <li><strong>No quemar nada:</strong> las quemas contaminan el aire, dañan la salud y pueden extenderse a los bosques de las montañas.</li>
+        </ul>
+    </div>
+
+    <div class="destacado-final">
+        <h2>✨ Bogotá es nuestra</h2>
+        <p>La ciudad que heredamos no es perfecta, pero es nuestra. El clima que tenemos hoy es el resultado de lo que hicimos ayer; el clima que tendremos mañana depende de lo que hagamos hoy. No necesitamos ser grandes científicos para cuidar Bogotá: basta con quererla, conocerla y respetarla.</p>
+        <p>La sabana que nos vio nacer y crecer merece que la defendamos. Cada acción que haces —por pequeña que sea— ayuda a que esta ciudad siga siendo un lugar donde valga la pena vivir.</p>
+        <p style="text-align: center; font-weight: bold; color: var(--verde-montana); margin-top: 1rem;">"Quien ama su ciudad, la cuida. Quien la cuida, la protege para siempre."</p>
+    </div>
+</main>
+
+<footer>
+    <p>Proyecto Educativo · 🏙️ Bogotá · Nuestra Casa Común · 2026</p>
+</footer>
+
+</body>
+</html>

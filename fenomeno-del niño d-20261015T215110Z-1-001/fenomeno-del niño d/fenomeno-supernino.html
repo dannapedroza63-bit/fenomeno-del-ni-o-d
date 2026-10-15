@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Fenómeno Super Niño</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', cursive, sans-serif; }
+        :root {
+            --azul-cielo: #4fc3f7;
+            --azul-profundo: #0277bd;
+            --naranja-brillante: #ff9800;
+            --amarillo-sol: #ffeb3b;
+            --verde-bosque: #4caf50;
+            --blanco: #ffffff;
+            --texto-fuerte: #263238;
+        }
+        body {
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 50%, #fff3e0 100%);
+            background-size: 300% 300%;
+            animation: olas-colores 10s ease infinite;
+            min-height: 100vh;
+            color: var(--texto-fuerte);
+        }
+        @keyframes olas-colores {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        nav {
+            background: linear-gradient(90deg, var(--azul-profundo), var(--verde-bosque), var(--naranja-brillante));
+            padding: 1.3rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.6rem 1rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover, nav a.activa {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        main {
+            padding: 3rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.6rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--azul-profundo);
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--naranja-brillante);
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+        .imagen-principal {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .seccion {
+            background: rgba(255,255,255,0.9);
+            padding: 2.4rem;
+            border-radius: 20px;
+            margin: 2.5rem 0;
+            border-left: 6px solid var(--azul-profundo);
+            box-shadow: 0 6px 20px rgba(2,119,189,0.12);
+        }
+        .seccion h2 {
+            color: var(--naranja-brillante);
+            margin-bottom: 1.3rem;
+            font-size: 1.6rem;
+            border-bottom: 2px dashed var(--azul-cielo);
+            padding-bottom: 0.6rem;
+        }
+        .seccion p {
+            line-height: 1.9;
+            margin-bottom: 1.3rem;
+            font-size: 1.05rem;
+        }
+        .seccion ul {
+            margin: 1.2rem 0 1.2rem 2rem;
+            line-height: 1.9;
+        }
+        .seccion li {
+            margin-bottom: 0.7rem;
+        }
+        .diferencia {
+            background: linear-gradient(135deg, #fff8e1, #ffecb3);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+            border-right: 5px solid var(--naranja-brillante);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(90deg, var(--azul-profundo), var(--verde-bosque));
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .imagen-principal { height: 200px; }
+            .seccion { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="portada-proyecto.html">🏔️ Inicio</a></li>
+        <li><a href="fenomeno-supernino.html" class="activa">🌊 El Fenómeno</a></li>
+        <li><a href="colombia-todo-pais.html">🇨🇴 Colombia</a></li>
+        <li><a href="bogota-clima-vida.html">🏙️ Bogotá</a></li>
+        <li><a href="cuidemos-nuestra-tierra.html">🌿 Educación</a></li>
+        <li><a href="lenguaje-y-naturaleza.html">📝 Español</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>🌊 ¿Qué es El Niño y el Super Niño?</h1>
+    <p class="subtitulo">Comprender el océano para entender el clima</p>
+
+    <img src="oceano-agua-calida.jpg" alt="Océano Pacífico y aguas cálidas" class="imagen-principal">
+
+    <div class="seccion">
+        <h2>🌍 ¿Cómo funciona normalmente?</h2>
+        <p>El océano Pacífico es el más grande del mundo y tiene mucha influencia sobre el clima. En condiciones normales, los vientos soplan desde América hacia Asia. Estos vientos empujan el agua caliente del mar hacia el oeste. Como el agua caliente se va para allá, el agua más fría del fondo sube por la costa de América del Sur.</p>
+        <p>El agua caliente que se acumula cerca de Asia y Australia provoca mucha lluvia en esas zonas. Mientras tanto, en la costa de América del Sur, el agua fría trae nutrientes del fondo, lo que alimenta a los peces y mantiene un clima más seco.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>🔥 ¿Qué pasa cuando llega El Niño?</h2>
+        <p>De vez en cuando, los vientos se debilitan. Ya no empujan con la misma fuerza el agua caliente hacia Asia. Entonces, el agua caliente regresa hacia América. Cuando eso pasa, todo cambia:</p>
+        <ul>
+            <li>El agua del mar se calienta más de lo normal frente a las costas de Perú y Ecuador</li>
+            <li>Las lluvias que deberían caer en Asia se desplazan hacia América</li>
+            <li>Las zonas que suelen ser húmedas pueden volverse secas, y las secas pueden volverse muy lluviosas</li>
+            <li>Las temperaturas suben en gran parte del planeta</li>
+        </ul>
+        <p>Este fenómeno recibe el nombre de "El Niño" porque los pescadores lo notaban cerca de la Navidad, y le pusieron ese nombre cariñoso al Niño Jesús.</p>
+    </div>
+
+    <div class="diferencia">
+        <h2>⚡ ¿Y qué es el Super Niño?</h2>
+        <p>El Super Niño no es un fenómeno distinto, sino una versión <strong>más fuerte e intensa</strong> de El Niño. Se llama así cuando el calentamiento del océano es mucho mayor de lo habitual y sus efectos se sienten con más fuerza en todo el mundo.</p>
+        
+        <p>En un Super Niño se cumplen estas cosas:</p>
+        <ul>
+            <li>El agua del mar se calienta mucho más de lo normal</li>
+            <li>Los cambios en el clima son más fuertes y duran más tiempo</li>
+            <li>Las sequías son más prolongadas y las lluvias más intensas donde ocurren</li>
+            <li>Los efectos se notan en más países, incluso en zonas que normalmente no sufren tanto</li>
+        </ul>
+        
+        <p>Los Super Niños más fuertes que se han registrado ocurrieron en los años 1997-1998, 2015-2016 y ahora se habla de uno nuevo que podría afectarnos. Por eso es importante estar informados y preparados.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>📈 ¿Cómo se detecta?</h2>
+        <p>Científicos de muchos países vigilan el mar todo el tiempo. Miden la temperatura del agua, la dirección de los vientos y la humedad del aire. Cuando ven que el agua se calienta más de lo normal durante varios meses, avisan que El Niño ha llegado. Si el calentamiento es muy grande, anuncian que se trata de un evento fuerte o "Super Niño".</p>
+        <p>Estas alertas nos dan tiempo para prepararnos: ahorrar agua, cuidar los cultivos, proteger los bosques y organizarnos entre todos.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>🔮 ¿Por qué nos afecta tanto?</h2>
+        <p>Colombia está en una zona donde convergen muchos climas. Tenemos el mar Caribe, el Pacífico, los Andes y la Amazonía. Cuando El Niño cambia los vientos y las lluvias en el mundo, nosotros lo sentimos con fuerza:</p>
+        <ul>
+            <li>Disminuyen las lluvias en gran parte del país</li>
+            <li>Los ríos bajan de nivel y los embalses se llenan menos</li>
+            <li>Aumenta el riesgo de incendios en los bosques y páramos</li>
+            <li>Las temperaturas suben, especialmente en las zonas bajas</li>
+            <li>La producción de alimentos puede verse afectada</li>
+        </ul>
+        <p>No podemos impedir que ocurra, pero sí podemos prepararnos. Conocerlo es el primer paso.</p>
+    </div>
+</main>
+
+<footer>
+    <p>Proyecto Educativo · Conocer el clima para protegerlo · 2026</p>
+</footer>
+
+</body>
+</html>

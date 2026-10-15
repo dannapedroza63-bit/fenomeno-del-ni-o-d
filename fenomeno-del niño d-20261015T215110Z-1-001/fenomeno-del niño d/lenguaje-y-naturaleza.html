@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Español | Lenguaje y Naturaleza</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', cursive, sans-serif; }
+        :root {
+            --azul-cielo: #4fc3f7;
+            --azul-profundo: #0277bd;
+            --naranja-brillante: #ff9800;
+            --amarillo-sol: #ffeb3b;
+            --verde-bosque: #4caf50;
+            --morado-suave: #b39dd1;
+            --rosa-calido: #f48fb1;
+            --blanco: #ffffff;
+            --texto-fuerte: #263238;
+        }
+        body {
+            background: linear-gradient(135deg, #f3e5f5 0%, #e8f5e9 50%, #e3f2fd 100%);
+            background-size: 300% 300%;
+            animation: letras-colores 12s ease infinite;
+            min-height: 100vh;
+            color: var(--texto-fuerte);
+        }
+        @keyframes letras-colores {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        nav {
+            background: linear-gradient(90deg, var(--morado-suave), var(--azul-profundo), var(--verde-bosque));
+            padding: 1.3rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.6rem 1rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover, nav a.activa {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        main {
+            padding: 3rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.6rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, var(--morado-suave), var(--azul-profundo), var(--verde-bosque));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--azul-profundo);
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+        .imagen-principal {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .seccion {
+            background: rgba(255,255,255,0.9);
+            padding: 2.4rem;
+            border-radius: 20px;
+            margin: 2.5rem 0;
+            border-right: 6px solid var(--morado-suave);
+            box-shadow: 0 6px 20px rgba(179,157,209,0.15);
+        }
+        .seccion h2 {
+            color: var(--azul-profundo);
+            margin-bottom: 1.3rem;
+            font-size: 1.6rem;
+            border-bottom: 2px dotted var(--morado-suave);
+            padding-bottom: 0.6rem;
+        }
+        .seccion p {
+            line-height: 1.9;
+            margin-bottom: 1.3rem;
+            font-size: 1.05rem;
+        }
+        .seccion ul {
+            margin: 1.2rem 0 1.2rem 2rem;
+            line-height: 1.9;
+        }
+        .seccion li {
+            margin-bottom: 0.7rem;
+        }
+        .caja-reflexion {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+            border-left: 5px solid var(--naranja-brillante);
+        }
+        .etapa {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.2rem 0;
+            border-top: 3px solid var(--verde-bosque);
+        }
+        .etapa h3 {
+            color: var(--verde-bosque);
+            margin-bottom: 0.8rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(90deg, var(--morado-suave), var(--azul-profundo));
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .imagen-principal { height: 200px; }
+            .seccion { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="portada-proyecto.html">🏔️ Inicio</a></li>
+        <li><a href="fenomeno-supernino.html">🌊 El Fenómeno</a></li>
+        <li><a href="colombia-todo-pais.html">🇨🇴 Colombia</a></li>
+        <li><a href="bogota-clima-vida.html">🏙️ Bogotá</a></li>
+        <li><a href="cuidemos-nuestra-tierra.html">🌿 Educación</a></li>
+        <li><a href="lenguaje-y-naturaleza.html" class="activa">📝 Español</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>📝 Lenguaje y Naturaleza: Comunicar para Transformar</h1>
+    <p class="subtitulo">Cómo las palabras nos ayudan a entender y proteger nuestro entorno</p>
+
+    <img src="lenguaje-naturaleza.jpg" alt="Libro y naturaleza: conocer para proteger" class="imagen-principal">
+
+    <div class="seccion">
+        <h2>📖 El lenguaje como herramienta</h2>
+        <p>El lenguaje no sirve solo para comunicarnos cosas cotidianas: es también la herramienta con la que comprendemos el mundo, lo explicamos a los demás y construimos ideas nuevas. Cuando hablamos del clima, del agua o de los fenómenos naturales, las palabras nos ayudan a poner orden en lo que observamos y a compartirlo con claridad.</p>
+        <p>En este proyecto, el área de Lengua Castellana tiene un papel muy importante: es la que permite que todo lo que aprendimos sobre El Niño, Colombia y Bogotá quede registrado, bien explicado y al alcance de quien lo quiera leer. Escribir con claridad, orden y respeto por la verdad es también una forma de cuidar el entorno: porque lo que se conoce, se valora; y lo que se valora, se protege.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>✍️ Cómo se trabajó la información</h2>
+        <p>Para elaborar todo el contenido de esta página web, seguimos un proceso de investigación y redacción en varias etapas:</p>
+        
+        <div class="etapa">
+            <h3>🔍 1. Buscar y leer</h3>
+            <p>Leímos información de fuentes confiables: instituciones como el IDEAM, textos sobre el clima de Colombia, documentos sobre la historia de Bogotá y materiales educativos. No todo lo que se lee en internet es verdad: por eso buscamos siempre en sitios serios y reconocidos.</p>
+        </div>
+        
+        <div class="etapa">
+            <h3>📝 2. Organizar y entender</h3>
+            <p>Separamos las ideas principales: qué es El Niño, por qué afecta a Colombia, cómo ha cambiado el clima en la ciudad y qué podemos hacer. Organizamos la información de lo general a lo particular, para que cualquier persona, aunque no sepa del tema, pueda entenderlo.</p>
+        </div>
+        
+        <div class="etapa">
+            <h3>📄 3. Escribir con claridad</h3>
+            <p>Usamos un lenguaje sencillo pero preciso. Explicamos las palabras difíciles, no pusimos información sin saber de dónde venía y cuidamos que todo tuviera sentido. Escribir bien no es usar palabras complicadas: es hacer que el mensaje llegue claro.</p>
+        </div>
+        
+        <div class="etapa">
+            <h3>🌐 4. Compartir en la web</h3>
+            <p>Convertimos todo lo aprendido en páginas que cualquiera puede visitar. Las imágenes, los colores y la organización ayudan a que la lectura sea agradable y fácil de seguir. Así el conocimiento no se queda solo en el cuaderno: viaja y llega a más personas.</p>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <h2>📚 Temas que se presentan en este proyecto</h2>
+        <p>Toda la información que ves en las distintas páginas fue redactada siguiendo criterios de claridad, veracidad y orden. Aquí te resumimos los ejes principales:</p>
+        
+        <ul>
+            <li><strong>El fenómeno de El Niño:</strong> explicación sencilla de qué es, dónde nace y por qué cambia las lluvias y las temperaturas en el mundo y en Colombia. Se evitan tecnicismos innecesarios para que todos lo comprendan.</li>
+            <li><strong>Impacto en el país:</strong> cómo cada región de Colombia —la costa, los Andes, la Amazonía, los Llanos— recibe el fenómeno de manera distinta, con sus propios retos y realidades.</li>
+            <li><strong>Bogotá y su transformación:</strong> la historia de la sabana, el crecimiento de la ciudad y cómo el cambio en el entorno ha influido en el clima local. Se narra con respeto por la historia y con mirada al futuro.</li>
+            <li><strong>Educación y acción:</strong> propuestas concretas, realizables desde casa, el colegio y la comunidad. No se trata de grandes discursos, sino de acciones pequeñas que suman mucho.</li>
+        </ul>
+    </div>
+
+    <div class="caja-reflexion">
+        <h2>💡 Reflexión final</h2>
+        <p>Escribir sobre el medio ambiente nos enseña algo muy importante: no somos espectadores del mundo, somos parte de él. Cuando describimos cómo cambia el clima, también estamos describiendo nuestra propia relación con la tierra que nos sostiene.</p>
+        <p>Este proyecto no termina aquí. La verdadera tarea empieza cuando cierras esta página y llevas lo aprendido a tu casa, a tu familia, a tus amigos. Contar lo que sabes es la mejor forma de multiplicar el cambio.</p>
+        <p style="font-weight: bold; color: #e65100; margin-top: 1rem;">"Las palabras pueden informar, pero también pueden inspirar. Que las tuyas inspiren a cuidar el mundo."</p>
+    </div>
+
+    <img src="trabajo-escrito-proyecto.jpg" alt="Trabajo escrito y reflexión del proyecto" class="imagen-principal">
+
+    <div class="seccion">
+        <h2>📌 Fuentes consultadas</h2>
+        <p>Toda la información presentada en este proyecto se elaboró a partir de fuentes confiables:</p>
+        <ul>
+            <li>IDEAM — Instituto de Hidrología, Meteorología y Estudios Ambientales de Colombia</li>
+            <li>Alcaldía Mayor de Bogotá — Documentos sobre historia y medio ambiente de la ciudad</li>
+            <li>Ministerio de Ambiente y Desarrollo Sostenible</li>
+            <li>Guía del proyecto educativo — "Super Niño: Bogotá en Alerta"</li>
+        </ul>
+        <p style="margin-top: 1.5rem; font-style: italic;">Este trabajo tiene fines educativos. Se recomienda consultar las fuentes oficiales para profundizar en los temas.</p>
+    </div>
+</main>
+
+<footer>
+    <p>Proyecto Educativo · Lenguaje y Naturaleza · Colombia 2026</p>
+</footer>
+
+</body>
+</html>

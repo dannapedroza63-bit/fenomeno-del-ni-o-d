@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educación Ambiental | Cuidemos Nuestra Tierra</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', cursive, sans-serif; }
+        :root {
+            --azul-cielo: #4fc3f7;
+            --azul-profundo: #0277bd;
+            --naranja-brillante: #ff9800;
+            --amarillo-sol: #ffeb3b;
+            --verde-bosque: #4caf50;
+            --verde-claro: #a5d6a7;
+            --lila-suave: #ce93d8;
+            --blanco: #ffffff;
+            --texto-fuerte: #263238;
+        }
+        body {
+            background: linear-gradient(180deg, #e8f5e9 0%, #c8e6c9 40%, #fff8e1 100%);
+            background-size: 100% 300%;
+            animation: naturaleza-viva 14s ease-in-out infinite;
+            min-height: 100vh;
+            color: var(--texto-fuerte);
+        }
+        @keyframes naturaleza-viva {
+            0% { background-position: 0 0; }
+            50% { background-position: 0 100%; }
+            100% { background-position: 0 0; }
+        }
+        nav {
+            background: linear-gradient(90deg, var(--verde-bosque), var(--azul-cielo), var(--naranja-brillante));
+            padding: 1.3rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.6rem 1rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover, nav a.activa {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        main {
+            padding: 3rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.6rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--verde-bosque);
+            text-shadow: 2px 2px 4px rgba(76,175,80,0.2);
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--azul-profundo);
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+        .imagen-principal {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .seccion {
+            background: rgba(255,255,255,0.9);
+            padding: 2.4rem;
+            border-radius: 20px;
+            margin: 2.5rem 0;
+            border-left: 6px solid var(--verde-bosque);
+            box-shadow: 0 6px 20px rgba(76,175,80,0.12);
+        }
+        .seccion h2 {
+            color: var(--azul-profundo);
+            margin-bottom: 1.3rem;
+            font-size: 1.6rem;
+            border-bottom: 2px dashed var(--verde-claro);
+            padding-bottom: 0.6rem;
+        }
+        .seccion p {
+            line-height: 1.9;
+            margin-bottom: 1.3rem;
+            font-size: 1.05rem;
+        }
+        .seccion ul {
+            margin: 1.2rem 0 1.2rem 2rem;
+            line-height: 1.9;
+        }
+        .seccion li {
+            margin-bottom: 0.7rem;
+        }
+        .destacado-bogota {
+            background: linear-gradient(135deg, #e3f2fd, #e1f5fe);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+            border-right: 5px solid var(--azul-profundo);
+        }
+        .caja-acciones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+        .accion {
+            background: white;
+            padding: 1.8rem;
+            border-radius: 14px;
+            border-top: 4px solid var(--naranja-brillante);
+            box-shadow: 0 4px 15px rgba(255,152,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .accion:hover {
+            transform: translateY(-5px);
+        }
+        .accion h3 {
+            color: var(--naranja-brillante);
+            margin-bottom: 0.8rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(90deg, var(--verde-bosque), var(--azul-profundo));
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .imagen-principal { height: 200px; }
+            .seccion { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="portada-proyecto.html">🏔️ Inicio</a></li>
+        <li><a href="fenomeno-supernino.html">🌊 El Fenómeno</a></li>
+        <li><a href="colombia-todo-pais.html">🇨🇴 Colombia</a></li>
+        <li><a href="bogota-clima-vida.html">🏙️ Bogotá</a></li>
+        <li><a href="cuidemos-nuestra-tierra.html" class="activa">🌿 Educación</a></li>
+        <li><a href="lenguaje-y-naturaleza.html">📝 Español</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>🌿 Educación Ambiental: Conocer para Cuidar</h1>
+    <p class="subtitulo">Porque cuidar el planeta empieza por entenderlo</p>
+
+    <img src="paramos-bogota.jpg" alt="Páramos y fuentes de agua cerca de Bogotá" class="imagen-principal">
+
+    <div class="seccion">
+        <h2>🌍 ¿Qué es la educación ambiental?</h2>
+        <p>La educación ambiental no es solo aprender a no tirar basura o cerrar la llave del agua. Es mucho más amplio: consiste en comprender que nosotros formamos parte de la naturaleza, no estamos separados de ella. Todo lo que hacemos afecta al entorno y todo lo que pasa en la naturaleza nos afecta a nosotros.</p>
+        <p>En un país tan rico en diversidad como Colombia, conocer nuestro entorno es una responsabilidad. Saber de dónde viene el agua que bebemos, cómo se forman las nubes que nos dan lluvia y por qué los bosques refrescan el aire nos convierte en personas más conscientes y responsables.</p>
+        <p>Frente a fenómenos como El Niño, la educación se vuelve nuestra herramienta más fuerte: quien entiende por qué falta el agua, sabrá valorarla y cuidarla. Quien comprende cómo cambia el clima, ayudará a protegerlo.</p>
+    </div>
+
+    <div class="destacado-bogota">
+        <h2>🏙️ El clima de Bogotá y su cuidado</h2>
+        <p>Bogotá tiene un clima especial: por estar ubicada sobre una gran sabana, rodeada de montañas y a más de 2.600 metros de altura, sus temperaturas suelen ser frescas durante todo el año. Sin embargo, quienes han vivido mucho tiempo en la ciudad han notado cambios importantes:</p>
+        
+        <ul>
+            <li>Las temperaturas máximas han subido: hay días más calurosos que hace 30 o 40 años</li>
+            <li>Las lluvias se han vuelto menos predecibles: a veces llueve mucho en poco tiempo y luego hay meses secos</li>
+            <li>Los páramos que nos dan agua, como Chingaza, han reducido su nivel de agua en épocas secas</li>
+            <li>La ciudad, al crecer con más cemento y menos árboles, retiene más calor que antes</li>
+        </ul>
+
+        <img src="ciclo-lluvia-bogota.jpg" alt="Ciclo del agua y las lluvias en la sabana" class="imagen-principal">
+
+        <p>Esto no significa que Bogotá deje de ser fresca, pero sí nos avisa que debemos cuidar más nuestro entorno. Plantar árboles, proteger los humedales, ahorrar agua y cuidar los páramos son acciones que ayudan a que la ciudad mantenga su frescura y su agua.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>💧 El agua: el tesoro más valioso</h2>
+        <p>El agua no es infinita. Aunque la veamos caer del cielo, solo una pequeña parte es agua dulce que podemos beber. En Bogotá, el agua que llega a nuestros hogares viaja desde los páramos, donde la lluvia se guarda en el suelo y baja poco a poco por los ríos. Cuando El Niño reduce las lluvias, ese almacén natural se vacía más rápido.</p>
+        
+        <img src="ahorro-agua-bogota.jpg" alt="Acciones para ahorrar agua en casa" class="imagen-principal">
+
+        <p>Cada persona puede contribuir a cuidar el agua con acciones sencillas pero poderosas:</p>
+        
+        <ul>
+            <li><strong>En la ducha:</strong> reducir el tiempo ayuda a ahorrar muchos litros cada día</li>
+            <li><strong>Al cepillarse los dientes:</strong> cerrar la llave mientras no se usa</li>
+            <li><strong>Revisar fugas:</strong> una llave que gotea desperdicia cientos de litros al mes</li>
+            <li><strong>Reutilizar:</strong> el agua de lavar frutas puede servir para regar plantas</li>
+            <li><strong>Compartir:</strong> explicar a la familia por qué es importante ahorrar agua</li>
+        </ul>
+    </div>
+
+    <div class="seccion">
+        <h2>🌳 Los árboles y la ciudad</h2>
+        <p>Los árboles son los pulmones de Bogotá. Dan sombra, enfrían el aire, guardan agua en el suelo y dan hogar a aves y animales pequeños. Cuando desaparecen zonas verdes, la ciudad se calienta y pierde su capacidad natural de regular el clima.</p>
+        
+        <img src="arboles-ciudad.jpg" alt="Árboles y zonas verdes en Bogotá" class="imagen-principal">
+
+        <p>Proteger lo que existe y plantar nuevos árboles donde sea posible es una de las mejores formas de cuidar el clima local. No necesitamos ser dueños de un terreno: en el colegio, en el patio de la casa o en un espacio comunitario, cada planta cuenta.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>🤝 Acciones de todos los días</h2>
+        <p>Cuidar el medio ambiente no requiere hacer cosas extraordinarias, sino hacer las cosas bien todos los días. Aquí tienes acciones que puedes empezar hoy mismo:</p>
+        
+        <div class="caja-acciones">
+            <div class="accion">
+                <h3>🗑️ Separar la basura</h3>
+                <p>Papel, plástico, vidrio y materia orgánica por separado. Así se aprovecha más y se contamina menos.</p>
+            </div>
+            <div class="accion">
+                <h3>🚶 Caminar o usar transporte público</h3>
+                <p>Menos carros significan menos gases que calientan el aire. En Bogotá, usar la bicicleta o el TransMilenio ayuda mucho.</p>
+            </div>
+            <div class="accion">
+                <h3>🔥 No quemar nada</h3>
+                <p>Las quemas destruyen el suelo, contaminan el aire y pueden iniciar incendios grandes, especialmente en épocas secas.</p>
+            </div>
+            <div class="accion">
+                <h3>🗣️ Hablar con otros</h3>
+                <p>Lo que aprendes, compártelo. El cambio llega cuando todos saben por qué deben cuidar su entorno.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="seccion" style="background: linear-gradient(135deg, #fff9c4, #fff59d); border-left-color: #ffc107;">
+        <h2>✨ Conclusión</h2>
+        <p>El clima de Bogotá y de Colombia no lo cuidan solo las autoridades o los científicos: lo cuidamos todos. Cada gota de agua ahorrada, cada árbol protegido y cada explicación que das a alguien suma. La educación ambiental no termina cuando sales del colegio: es para toda la vida y para todo el que te rodea.</p>
+        <p style="text-align: center; font-weight: bold; color: #f57c00; margin-top: 1.5rem;">"Cuidar no es obligación. Es gratitud con la tierra que nos sostiene."</p>
+    </div>
+</main>
+
+<footer>
+    <p>Proyecto Educativo · Cuidemos Nuestra Tierra · Colombia 2026</p>
+</footer>
+
+</body>
+</html>

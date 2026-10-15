@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Niño: Colombia en Alerta</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', cursive, sans-serif; }
+        :root {
+            --azul-cielo: #4fc3f7;
+            --azul-profundo: #0277bd;
+            --naranja-brillante: #ff9800;
+            --amarillo-sol: #ffeb3b;
+            --verde-bosque: #4caf50;
+            --rosa-suave: #f8bbd9;
+            --blanco: #ffffff;
+            --texto-fuerte: #263238;
+        }
+        body {
+            background: linear-gradient(180deg, #e1f5fe 0%, #fff8e1 50%, #e8f5e9 100%);
+            background-size: 100% 300%;
+            animation: cielo-movible 12s ease-in-out infinite;
+            min-height: 100vh;
+            color: var(--texto-fuerte);
+        }
+        @keyframes cielo-movible {
+            0% { background-position: 0 0; }
+            50% { background-position: 0 100%; }
+            100% { background-position: 0 0; }
+        }
+        nav {
+            background: linear-gradient(90deg, var(--azul-profundo), var(--verde-bosque), var(--naranja-brillante));
+            padding: 1.3rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.6rem 1rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        nav a:hover, nav a.activa {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        main {
+            padding: 3rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, var(--azul-profundo), var(--verde-bosque), var(--naranja-brillante));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 1.3rem;
+            color: var(--azul-profundo);
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+        .imagen-grande {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .caja-contenido {
+            background: rgba(255,255,255,0.85);
+            padding: 2.5rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border-left: 6px solid var(--naranja-brillante);
+            box-shadow: 0 6px 20px rgba(255,152,0,0.15);
+        }
+        .caja-contenido h2 {
+            color: var(--verde-bosque);
+            margin-bottom: 1.2rem;
+            font-size: 1.6rem;
+            border-bottom: 2px dotted var(--azul-cielo);
+            padding-bottom: 0.5rem;
+        }
+        .caja-contenido p {
+            line-height: 1.9;
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+        .secciones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .tarjeta {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            transition: transform 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .tarjeta:hover {
+            transform: translateY(-10px);
+        }
+        .tarjeta .icono {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .tarjeta h3 {
+            color: var(--azul-profundo);
+            margin-bottom: 0.8rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(90deg, var(--azul-profundo), var(--verde-bosque));
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .imagen-grande { height: 220px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="portada-proyecto.html" class="activa">🏔️ Inicio</a></li>
+        <li><a href="fenomeno-supernino.html">🌊 El Fenómeno</a></li>
+        <li><a href="colombia-todo-pais.html">🇨🇴 Colombia</a></li>
+        <li><a href="bogota-clima-vida.html">🏙️ Bogotá</a></li>
+        <li><a href="cuidemos-nuestra-tierra.html">🌿 Educación</a></li>
+        <li><a href="lenguaje-y-naturaleza.html">📝 Español</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>🌍 Super Niño: Colombia en Alerta</h1>
+    <p class="subtitulo">Conocer el clima de nuestro país para protegerlo entre todos</p>
+    
+    <img src="cielo-nubes-colores.jpg" alt="Cielo, nubes y colores de la naturaleza" class="imagen-grande">
+
+    <div class="caja-contenido">
+        <h2>✨ Bienvenidos a nuestro proyecto</h2>
+        <p>El clima de la Tierra ha cambiado a lo largo de millones de años, pero hoy esos cambios ocurren más rápido que nunca. Fenómenos como El Niño y el Super Niño nos muestran lo conectado que está todo en nuestro planeta: lo que pasa en un océano lejano se siente en los campos, las ciudades y los hogares de Colombia.</p>
+        
+        <p>Este proyecto fue creado para entender qué son estos fenómenos, por qué afectan a nuestro país de formas tan distintas y qué podemos hacer nosotros —desde nuestra casa, nuestro colegio y nuestra ciudad— para cuidar el agua, proteger la naturaleza y prepararnos juntos.</p>
+        
+        <p>No necesitamos ser científicos para empezar: solo hace falta observar, aprender y actuar. Cada página que vas a visitar te invita a mirar el mundo con ojos nuevos, a valorar lo que tenemos y a convertirte en guardián de tu entorno.</p>
+    </div>
+
+    <div class="secciones">
+        <div class="tarjeta">
+            <span class="icono">🌊</span>
+            <h3>¿Qué es El Niño?</h3>
+            <p>Descubre por qué el agua del mar cambia de temperatura y cómo eso transforma el clima de todo el mundo.</p>
+        </div>
+        <div class="tarjeta">
+            <span class="icono">🇨🇴</span>
+            <h3>Colombia siente el cambio</h3>
+            <p>De la costa a los Andes, de la Amazonía a los Llanos: cada región vive el fenómeno a su manera.</p>
+        </div>
+        <div class="tarjeta">
+            <span class="icono">🏙️</span>
+            <h3>Bogotá y su historia</h3>
+            <p>¿Cómo era el clima de la sabana hace 50 años? ¿Qué ha cambiado en nuestra ciudad?</p>
+        </div>
+        <div class="tarjeta">
+            <span class="icono">🌿</span>
+            <h3>Educación Ambiental</h3>
+            <p>Acciones concretas, fáciles y útiles para cuidar el agua, los árboles y el entorno desde ya.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Proyecto Educativo · Colombia 2026 · "Conocer para proteger"</p>
+</footer>
+
+</body>
+</html>
